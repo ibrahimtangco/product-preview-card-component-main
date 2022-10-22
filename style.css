@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* RESET */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+@media only screen and (max-width: 480px){
+   .mobile{
+      display: block;
+   }
+}
+
+.mobile{
+   display: none;
+}
+img{
+   width: 100%;
+   display: block;
+}
+
+/* Setting font family */
+.ff-fraunces{
+   font-family: 'Fraunces', serif;
+}
+.ff-montserrat{
+   font-family: 'Montserrat', sans-serif;
+}
+
+/* bckground colors */
+.bg-white{
+   background: hsl(0, 0%, 100%);
+}
+.bg-dark-cyan{
+   background-color: hsl(158, 36%, 37%);
+}
+.bg-cream{
+   background-color: hsl(30, 38%, 92%);
+}
+
+/* font weight */
+.fw-normal{
+   font-weight: 500;
+}
+.fw-bold{
+   font-weight: 700;
+}
+
+/* font size */
+.fs-14{
+   font-size: .9rem;
+}
+.fs-25{
+   font-size: 2rem;
+}
+
+/* color */
+.clr-dark-cyan{
+   color: hsl(158, 36%, 37%);
+}
+.clr-very-dark-blue{
+   color: hsl(212, 21%, 14%);
+}
+.clr-dark-grayish-blue{
+   color: hsl(228, 12%, 48%);
+}
+.padding-16{
+   padding: 1.8rem;
+}
+
+button{
+   color: hsl(0, 0%, 100%);
+   border: none;
+}
+
+
+/* -------------- */
+.wrapper{
+   width: 100%;
+   min-height: 100vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container{
+   max-width: 37rem;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.row{
+   flex-basis: 50%;
+   display: block;
+}
+h1{
+   line-height: 1em;
+   padding: .7em 0 ;
+}
+.lh-24{
+   line-height: 1.5em;
+}
+.price{
+   display: flex;
+   align-items: center;
+   padding: 1em 0;
+}
+.price .fs-25{
+   padding-right: 10px;
+}
+button{
+   width: 100%;
+   padding: .8rem;
+   border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 700px){
+   .mobile{
+      display: block;
+   }
+   .desktop{
+      display: none;
+   }
+   .container{
+      width: 80%;
+      min-width: 350px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+   .row{
+      flex-basis: 50%;
+      flex-shrink: 0;
+   }
+}
